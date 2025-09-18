@@ -1,0 +1,37 @@
+# venv
+.venv/
+venv/
+ENV/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Env files
+.env
+.env.*
+
+# Databases (keep specific DB if needed)
+*.db
+*.db-journal
+*.sqlite3
+!backend/data/movies.db
+
+# Editors/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Tests/logs
+.pytest_cache/
+.coverage*
+htmlcov/
+*.log
+
