@@ -68,5 +68,131 @@
 		"overview": "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead.",
 		"poster_url": null,
 		"genres": ["Animation", "Adventure", "Family"]
+	},
+	{
+		"title": "The Shawshank Redemption",
+		"year": 1994,
+		"overview": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+		"poster_url": null,
+		"genres": ["Drama"]
+	},
+	{
+		"title": "The Godfather",
+		"year": 1972,
+		"overview": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+		"poster_url": null,
+		"genres": ["Crime", "Drama"]
+	},
+	{
+		"title": "Pulp Fiction",
+		"year": 1994,
+		"overview": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+		"poster_url": null,
+		"genres": ["Crime", "Drama"]
+	},
+	{
+		"title": "Forrest Gump",
+		"year": 1994,
+		"overview": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75.",
+		"poster_url": null,
+		"genres": ["Drama", "Romance"]
+	},
+	{
+		"title": "The Matrix",
+		"year": 1999,
+		"overview": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+		"poster_url": null,
+		"genres": ["Action", "Sci-Fi"]
+	},
+	{
+		"title": "Goodfellas",
+		"year": 1990,
+		"overview": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito.",
+		"poster_url": null,
+		"genres": ["Crime", "Drama"]
+	},
+	{
+		"title": "The Lord of the Rings: The Fellowship of the Ring",
+		"year": 2001,
+		"overview": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+		"poster_url": null,
+		"genres": ["Action", "Adventure", "Drama"]
+	},
+	{
+		"title": "Fight Club",
+		"year": 1999,
+		"overview": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+		"poster_url": null,
+		"genres": ["Drama"]
+	},
+	{
+		"title": "The Lion King",
+		"year": 1994,
+		"overview": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+		"poster_url": null,
+		"genres": ["Animation", "Adventure", "Drama"]
+	},
+	{
+		"title": "Titanic",
+		"year": 1997,
+		"overview": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+		"poster_url": null,
+		"genres": ["Drama", "Romance"]
+	},
+	{
+		"title": "Avatar",
+		"year": 2009,
+		"overview": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+		"poster_url": null,
+		"genres": ["Action", "Adventure", "Fantasy"]
+	},
+	{
+		"title": "Spirited Away",
+		"year": 2001,
+		"overview": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by witches and populated by strange creatures.",
+		"poster_url": null,
+		"genres": ["Animation", "Adventure", "Family"]
+	},
+	{
+		"title": "The Avengers",
+		"year": 2012,
+		"overview": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+		"poster_url": null,
+		"genres": ["Action", "Adventure", "Sci-Fi"]
+	},
+	{
+		"title": "Casablanca",
+		"year": 1942,
+		"overview": "A cynical expatriate American cafe owner struggles to decide whether or not to help his former lover and her fugitive husband escape the Nazis in French Morocco.",
+		"poster_url": null,
+		"genres": ["Drama", "Romance"]
+	},
+	{
+		"title": "The Silence of the Lambs",
+		"year": 1991,
+		"overview": "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.",
+		"poster_url": null,
+		"genres": ["Crime", "Drama", "Thriller"]
+	},
+	{
+		"title": "Back to the Future",
+		"year": 1985,
+		"overview": "Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend.",
+		"poster_url": null,
+		"genres": ["Adventure", "Comedy", "Sci-Fi"]
+	},
+	{
+		"title": "The Shining",
+		"year": 1980,
+		"overview": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings.",
+		"poster_url": null,
+		"genres": ["Drama", "Horror"]
+	},
+	{
+		"title": "Jurassic Park",
+		"year": 1993,
+		"overview": "A pragmatic paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
+		"poster_url": null,
+		"genres": ["Action", "Adventure", "Sci-Fi"]
 	}
 ]
