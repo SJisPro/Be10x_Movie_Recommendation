@@ -81,31 +81,35 @@ st.markdown("""
 def start_backend():
     """Start the FastAPI backend in a separate thread"""
     try:
-        # Change to backend directory
-        backend_path = Path(__file__).parent / "backend"
-        os.chdir(backend_path)
-        
-        # Seed the database first
-        subprocess.run([os.sys.executable, "seed/seed_db.py"], check=True)
-        print("Database seeded successfully!")
-        
-        # Start the FastAPI server
-        subprocess.run([
-            os.sys.executable, "-m", "uvicorn", 
-            "app.main:app", 
-            "--host", "0.0.0.0", 
-            "--port", "8000"
-        ])
+        # Use the startup script
+        subprocess.run([os.sys.executable, "start_backend.py"], check=True)
     except Exception as e:
         print(f"Error starting backend: {e}")
+
+def check_backend_health():
+    """Check if backend is running and healthy"""
+    try:
+        response = requests.get(f"{API_BASE_URL}/health", timeout=2)
+        return response.status_code == 200
+    except:
+        return False
 
 # Start backend in background (only once)
 if not hasattr(st.session_state, 'backend_started'):
     backend_thread = threading.Thread(target=start_backend, daemon=True)
     backend_thread.start()
     st.session_state.backend_started = True
-    # Wait a moment for backend to start
-    time.sleep(3)
+    
+    # Wait for backend to start with retries
+    max_retries = 10
+    for i in range(max_retries):
+        time.sleep(2)
+        if check_backend_health():
+            print("Backend started successfully!")
+            break
+        print(f"Waiting for backend... attempt {i+1}/{max_retries}")
+    else:
+        print("Backend failed to start after maximum retries")
 
 def fetch_genres() -> List[str]:
     """Fetch available genres from the API"""
@@ -151,6 +155,14 @@ def main():
     # Header
     st.title("🎬 Movie Recommendations")
     st.markdown("Discover your next favorite movie based on genre preferences!")
+    
+    # Backend status indicator
+    if check_backend_health():
+        st.success("✅ Backend is running")
+    else:
+        st.error("❌ Backend is not responding. Please wait a moment and refresh the page.")
+        st.info("The backend is starting up in the background. This may take a few moments on first load.")
+        return
     
     # Sidebar for controls
     with st.sidebar:
