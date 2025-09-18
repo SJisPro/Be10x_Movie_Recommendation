@@ -6,10 +6,11 @@ from typing import Dict, List
 # Add the parent directory to the path so we can import from backend
 sys.path.append(str(Path(__file__).parent.parent.parent))
 
-from sqlmodel import Session, select
+from sqlmodel import Session, select, delete
 
 from backend.app.db import engine
 from backend.app.models import Movie, Genre, MovieGenre
+from sqlmodel import SQLModel
 
 SEED_FILE = Path(__file__).with_name("seed_movies.json")
 
@@ -29,7 +30,16 @@ def seed_movies() -> None:
 	with open(SEED_FILE, "r", encoding="utf-8") as f:
 		payload: List[Dict] = json.load(f)
 
+	# Ensure tables exist in a fresh DB
+	SQLModel.metadata.create_all(engine)
+
 	with Session(engine) as session:
+		# Clear existing data to avoid duplicates
+		session.exec(delete(MovieGenre))
+		session.exec(delete(Movie))
+		session.exec(delete(Genre))
+		session.commit()
+
 		for entry in payload:
 			title = entry["title"]
 			year = entry.get("year")

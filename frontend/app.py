@@ -5,7 +5,12 @@ from typing import List, Dict, Optional
 import time
 
 # Configuration
-API_BASE_URL = "http://localhost:8000"
+import os
+API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8000")
+
+# For Streamlit Cloud deployment
+if "streamlit" in os.getenv("_", ""):
+    API_BASE_URL = "http://localhost:8000"
 
 # Page config
 st.set_page_config(
