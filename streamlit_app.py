@@ -180,10 +180,8 @@ def main():
     st.title("🎬 Movie Recommendations")
     st.markdown("Discover your next favorite movie based on genre preferences!")
     
-    # Backend status indicator
-    if check_backend_health():
-        st.success("✅ Backend is running")
-    else:
+    # Check backend health silently
+    if not check_backend_health():
         st.error("❌ Backend is not responding. Please wait a moment and refresh the page.")
         st.info("The backend is starting up in the background. This may take a few moments on first load.")
         return
