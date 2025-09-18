@@ -1,0 +1,72 @@
+[
+	{
+		"title": "Inception",
+		"year": 2010,
+		"overview": "A thief who steals corporate secrets through dream-sharing technology is given a chance to erase his criminal history.",
+		"poster_url": null,
+		"genres": ["Action", "Sci-Fi", "Thriller"]
+	},
+	{
+		"title": "The Dark Knight",
+		"year": 2008,
+		"overview": "Batman faces the Joker, a criminal mastermind who plunges Gotham into chaos.",
+		"poster_url": null,
+		"genres": ["Action", "Crime", "Drama"]
+	},
+	{
+		"title": "Interstellar",
+		"year": 2014,
+		"overview": "A team travels through a wormhole in space in an attempt to ensure humanity's survival.",
+		"poster_url": null,
+		"genres": ["Adventure", "Drama", "Sci-Fi"]
+	},
+	{
+		"title": "Parasite",
+		"year": 2019,
+		"overview": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy and the destitute.",
+		"poster_url": null,
+		"genres": ["Drama", "Thriller"]
+	},
+	{
+		"title": "Toy Story",
+		"year": 1995,
+		"overview": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy.",
+		"poster_url": null,
+		"genres": ["Animation", "Adventure", "Comedy"]
+	},
+	{
+		"title": "Mad Max: Fury Road",
+		"year": 2015,
+		"overview": "In a post-apocalyptic wasteland, Max helps a rebellious woman and a group of female prisoners flee.",
+		"poster_url": null,
+		"genres": ["Action", "Adventure", "Sci-Fi"]
+	},
+	{
+		"title": "La La Land",
+		"year": 2016,
+		"overview": "A jazz pianist and an aspiring actress fall in love while pursuing their dreams in Los Angeles.",
+		"poster_url": null,
+		"genres": ["Comedy", "Drama", "Music"]
+	},
+	{
+		"title": "Get Out",
+		"year": 2017,
+		"overview": "A young African-American visits his white girlfriend's parents for the weekend, where his simmering uneasiness about their reception eventually reaches a boiling point.",
+		"poster_url": null,
+		"genres": ["Horror", "Mystery", "Thriller"]
+	},
+	{
+		"title": "The Grand Budapest Hotel",
+		"year": 2014,
+		"overview": "A writer encounters the owner of an aging high-class hotel, who tells him of his early years serving as a lobby boy.",
+		"poster_url": null,
+		"genres": ["Adventure", "Comedy", "Crime"]
+	},
+	{
+		"title": "Coco",
+		"year": 2017,
+		"overview": "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead.",
+		"poster_url": null,
+		"genres": ["Animation", "Adventure", "Family"]
+	}
+]

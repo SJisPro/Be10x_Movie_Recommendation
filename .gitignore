@@ -18,7 +18,7 @@ build/
 *.db
 *.db-journal
 *.sqlite3
-!backend/data/movies.db
+backend/data/movies.db
 
 # Editors/OS
 .vscode/
