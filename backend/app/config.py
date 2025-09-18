@@ -8,6 +8,8 @@ from pathlib import Path
 _BACKEND_DIR = Path(__file__).resolve().parents[1]
 _DB_PATH = _BACKEND_DIR / "data" / "movies.db"
 
+# Ensure data directory exists
+_DB_PATH.parent.mkdir(exist_ok=True)
 
 class Settings(BaseSettings):
 	DATABASE_URL: str = f"sqlite:///{_DB_PATH.as_posix()}"
